@@ -1,31 +1,33 @@
-import csv
 from mergeSort import merge_sort
 from  quickSort import quickSort
+from utils.utils import read_csv_and_convert_to_dict, write_csv
 
+sorted_tabs= []
 
-HEADER = "ï»¿Inventarnummer;Inventarort"
-array_dict = []
 def main():
     path_file = "C:\\Users\\Regis\\Desktop\\Cecile\\thema.csv"
 
-    # lecture et transformation en dictionnaires
-    with open(path_file, 'r') as csvfile:
-        csv_dic_reader = csv.DictReader(csvfile)
+    print("-----------Algorithme de tri  ---------")
+    print("Choississez votre algorithme")
+    print("Tapez 1: Quick Sort")
+    print("Tapez 2: Merge Sort")
 
-        for row in csv_dic_reader:
-            value = row[HEADER]
-            inventarnummer, inventarort = value.split(";")
-            #array_dict.append({inventarort: int(inventarnummer)})
-            array_dict.append({"Inventarort": inventarort, "Inventarnummer": int(inventarnummer)})
-        # trie du dictionnaire
-        sorted_tabs1 = quickSort(array_dict)
-        #sorted_tabs2 = merge_sort(array_dict)
+    choix = input("Faites votre choix: ")
 
-    # creation a l'aide du dictionnaire
-    with open("sorted1.csv", 'w', newline='') as file:
-       writer = csv.DictWriter(file, fieldnames=["Inventarort", "Inventarnummer"])
-       writer.writeheader()
-       writer.writerows(sorted_tabs1)
+    # lecture et transformation en tableau de dictionnaire
+    array_dict = read_csv_and_convert_to_dict(path_file)
+
+    # trie avec le quick ou le merge
+    if choix == '1':
+        sorted_tabs = quickSort(array_dict)
+    elif choix == '2':
+        sorted_tabs = merge_sort(array_dict)
+    else:
+        print("Veuillez choisir 1 ou 2")
+        return 0
+
+    # creation du fichier csv trie
+    write_csv(sorted_tabs)
 
 #Appel du main
 main()
