@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be595856-4da2-4f2e-9dd1-e512a6a477e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mergeSort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quickSort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge.sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge.sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mergeSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/mergeSort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +38,17 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.main.executor": "Run",
+    "Python.mergeSort.executor": "Run",
+    "Python.quickSort.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Regis\PycharmProjects\Software_Algo_Cecile" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,6 +68,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,9 +98,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/mergeSort.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
