@@ -1,3 +1,5 @@
+
+import sys
 def merge_sort(tabs):
     # cas de base
     if len(tabs) == 1:
@@ -47,3 +49,4 @@ def fusionner(tab1, tab2):
         j += 1
         k += 1
     return tab3
+

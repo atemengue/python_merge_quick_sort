@@ -1,4 +1,5 @@
 import csv
+from mergeSort import merge_sort
 
 
 HEADER = "ï»¿Inventarnummer;Inventarort"
